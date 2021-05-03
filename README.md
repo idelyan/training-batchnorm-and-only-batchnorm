@@ -11,6 +11,8 @@ Link to publication: https://arxiv.org/abs/2003.00152
 
 3_batchnorm_only_batchnorm.ipynb - training the ResNet50 on a Imagenet10 mini dataset with augmentation. Best accuracy - 85%. All weights ResNet50 were trained, on a mini Imagenet10 dataset best accuracy was 95%.
 
+<h2>Training:</h2>
+
 In all experiments, I used the Adam optimizer instead of SGD, with a starting learning rate 0.01 and reducing it to 1e-05, the batch size is 1024 instead of 128 from the original paper. As well as augmentation for experiments 2 and 3.
 
 <b>The purpose of the experiment:</b> to see how much the gamma and beta weights in the batch normalization layers, the total volume of which is less than 1% of the entire network, affect the performance of the network training.
